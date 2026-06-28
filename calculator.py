@@ -21,6 +21,9 @@ def divide(a, b):
         raise ValueError("Cannot divide by zero!")
     return a / b
 
+def power(a, b):
+    """Return a raised to the power of b."""
+    return a ** b
 def main():
     """Demonstrate the calculator functions."""
     print("=== Simple Calculator ===")
@@ -28,6 +31,7 @@ def main():
     print(f"10 - 5 = {subtract(10, 5)}")
     print(f"10 * 5 = {multiply(10, 5)}")
     print(f"10 / 5 = {divide(10, 5)}")
+    print(f"10 ^ 2 = {power(10, 2)}")
 
 if __name__ == "__main__":
     main()
